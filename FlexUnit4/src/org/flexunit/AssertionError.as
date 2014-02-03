@@ -34,6 +34,8 @@ package org.flexunit
 		{
 			super(message, id);
 		}
-		
-	}
+        public function toString():String {
+            return "AssertionError:"+(errorID>0?'#'+errorID:'')+' '+message;
+        }
+    }
 }
